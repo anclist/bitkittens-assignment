@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   var boxes = document.querySelectorAll('.cat-box');
 
-  $( '.summon-cats' ).click(function() {
-    console.log('clicked');
+  $('.summon-cats').click(function() {
     $.ajax({
       url: 'http://bitkittens.herokuapp.com/cats.json',
       method: 'GET',
